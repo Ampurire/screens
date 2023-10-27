@@ -13,7 +13,6 @@ const Header = () => {
              HOME
           </a>
           <a href="">ABOUT</a>
-          <a href="">UPLOAD</a>
           <a href="">LOG IN</a>
           <a href="">SIGN UP</a>
           
