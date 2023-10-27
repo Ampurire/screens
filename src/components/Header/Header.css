@@ -1,0 +1,33 @@
+/* Header container with flex display */
+.h-wrapper {
+    background: var(--blue);
+    color: white;
+    display: flex; /* Use flex display to arrange items */
+    justify-content: space-between; /* Space items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 1rem;
+  }
+  
+  /* Style for the "HOSTEL HAVEN" text */
+  .h-container {
+    color: var(--secondary);
+  }
+  
+  /* Style for the menu items */
+  .h-menu {
+    display: flex; /* Use flex display for menu items */
+    gap: 20px; /* Increase the gap to add more space */
+  }
+  
+  /* Style for individual menu items (anchors) */
+  .h-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Add underline to the HOME link */
+  .h-menu a:first-child {
+    text-decoration: underline;
+  }
+  

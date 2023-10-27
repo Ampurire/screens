@@ -1,13 +1,154 @@
+/* Reset the margin to 0 for the entire webpage */
 body {
   margin: 0;
+  
+  /* Define font families for text content */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  
+  /* Improve font rendering on webkit-based browsers */
   -webkit-font-smoothing: antialiased;
+  
+  /* Improve font rendering on Mozilla-based browsers */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Define font families for code elements */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Define custom CSS variables */
+:root {
+  --primary: #1f3e72;
+  --secondary: rgba(255, 255, 255, 0.78);
+  --black: #131110;
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  --blue: #4066ff;
+  --lightBlue: #eeeeff;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+/* Apply styles to all elements in the document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Apply styles to anchor (link) elements */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Apply padding styles to elements with the class "paddings" */
+.paddings {
+  padding: 1.5rem;
+}
+
+/* Apply width styles to elements with the class "innerWidth" */
+.innerWidth {
+  width: 100%;
+}
+
+/* Apply flexbox styles to elements with the class "flexCenter" */
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Apply flexbox styles to elements with the class "flexStart" */
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Apply flexbox styles to elements with the class "flexEnd" */
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Apply flexbox styles to elements with the class "flexColCenter" */
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Apply flexbox styles to elements with the class "flexColStart" */
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Apply flexbox styles to elements with the class "flexColEnd" */
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Define styles for elements with the class "primaryText" */
+.primaryText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Define styles for elements with the class "secondaryText" */
+.secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
+}
+
+/* Define styles for elements with the class "orangeText" */
+.orangeText {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
 }
